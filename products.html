@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+<html>
+      <head>
+           <title> YSL BEAUTY</title>
+             <link rel="stylesheet" href="style.css" type="text/css"/>
+			 
+
+      </head>
+  <body>
+          
+             
+ <!-- NAVBAR -->
+
+<header>
+    <div class="logo">
+        <h1>YSL</h1>
+        <span>Beauty & Fashion</span>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="Customer Database.html">Customer Database</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+
+        <button class="theme-btn" onclick="toggleTheme()">🌗</button>
+    </nav>
+</header>
+
+
+<section class="products">
+
+<h1>Our Luxury Products</h1>
+
+<p class="intro">
+Explore our premium beauty and fashion collection designed
+to inspire confidence, elegance, and timeless style.
+</p>
+
+<input
+type="text"
+id="search"
+placeholder="Search products..."
+onkeyup="searchProducts()">
+
+<div class="product-container" id="productContainer">
+
+<div class="card">
+<img src="images/images (7).jfif" alt="">
+<h2>Luxury Handbag</h2>
+<p>Elegant designer handbag made from premium materials.</p>
+<h3>$250</h3>
+<button onclick="viewDetails('Luxury Handbag')">
+View Details
+</button>
+</div>
+
+<div class="card">
+<img src="images/images (1).jfif" alt="">
+<h2>Fashion Shoes</h2>
+<p>Modern luxury shoes crafted for comfort and style.</p>
+<h3>$180</h3>
+<button onclick="viewDetails('Fashion Shoes')">
+View Details
+</button>
+</div>
+
+<div class="card">
+<img src="images/images (48).jpg" alt="">
+<h2>Beauty Perfume</h2>
+<p>Long-lasting fragrance with a sophisticated scent.</p>
+<h3>$120</h3>
+<button onclick="viewDetails('Beauty Perfume')">
+View Details
+</button>
+</div>
+
+<div class="card">
+<img src="images/lip 5.jpg" alt="">
+<h2>Luxury Lipstick</h2>
+<p>Premium lipstick delivering vibrant color and elegance.</p>
+<h3>$40</h3>
+<button onclick="viewDetails('Luxury Lipstick')">
+View Details
+</button>
+</div>
+
+
+<div class="card">
+<img src="images/fund4.jpg" alt="">
+<h2>Foundition</h2>
+<p>Modern luxury shoes crafted for comfort and style.</p>
+<h3>$60</h3>
+<button onclick="viewDetails('foundition')">
+View Details
+</button>
+</div>
+
+
+<div class="card">
+<img src="images/blu 9.jpg" alt="">
+<h2>Blushes</h2>
+<p>Modern luxury shoes crafted for comfort and style.</p>
+<h3>$50</h3>
+<button onclick="viewDetails('blushes')">
+View Details
+</button>
+</div>
+
+
+<div class="card">
+<img src="images/download (17).jpg" alt="">
+<h2>countour</h2>
+<p>Modern luxury shoes crafted for comfort and style.</p>
+<h3>$30</h3>
+<button onclick="viewDetails('countour')">
+View Details
+</button>
+</div>
+
+
+<div class="card">
+<img src="images/images (4).jfif" alt="">
+<h2>clothes</h2>
+<p>Modern luxury shoes crafted for comfort and style.</p>
+<h3>$190</h3>
+<button onclick="viewDetails('Fashion clothes')">
+View Details
+</button>
+</div>
+
+</div>
+
+</section>
+
+    
+
+<script src="script.js"></script>
+</body>
+
+</html>

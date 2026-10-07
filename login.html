@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html>
+      <head>
+           <title> YSL BEAUTY</title>
+             <link rel="stylesheet" href="style.css" type="text/css"/>
+			 
+
+      </head>
+  <body>
+          
+                
+ <!-- NAVBAR -->
+
+<header>
+    <div class="logo">
+        <h1>YSL</h1>
+        <span>Beauty & Fashion</span>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="Customer Database.html">Customer Database</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+<button class="theme-btn" onclick="toggleTheme()">🌗</button>
+        
+    </nav>
+</header>
+
+
+<div class="auth-box">
+
+<!-- TABS -->
+<div class="tabs">
+<div class="tab active" onclick="switchTab('login')">Sign In</div>
+<div class="tab" onclick="switchTab('register')">Register</div>
+</div>
+
+<!-- LOGIN -->
+<div class="form active" id="login">
+
+<input type="text" placeholder="Email or Phone" id="loginUser">
+
+<div class="pass-wrapper">
+<input type="password" placeholder="Password" id="loginPass">
+<span onclick="togglePass('loginPass',this)">👁️</span>
+</div>
+
+<button onclick="login()">Login</button>
+<p class="error" id="loginError"></p>
+
+</div>
+
+<!-- REGISTER -->
+<div class="form" id="register">
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email" id="email">
+
+<input type="text" placeholder="Phone Number" id="phone">
+
+<div class="pass-wrapper">
+<input type="password" placeholder="Password" id="pass">
+<span onclick="togglePass('pass',this)">👁️</span>
+</div>
+
+<div class="pass-wrapper">
+<input type="password" placeholder="Confirm Password" id="cpass">
+<span onclick="togglePass('cpass',this)">👁️</span>
+</div>
+
+<button onclick="register()">Create Account</button>
+<p class="error" id="regError"></p>
+
+</div>
+
+</div>
+
+    
+
+<script src="script.js"></script>
+</body>
+
+</html>

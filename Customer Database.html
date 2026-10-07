@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html>
+      <head>
+           <title> YSL BEAUTY</title>
+             <link rel="stylesheet" href="style.css" type="text/css"/>
+			 
+
+      </head>
+  <body>
+          
+    
+<header>
+    <div class="logo">
+        <h1>YSL</h1>
+        <span>Beauty & Fashion</span>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="Customer Database.html">Customer Database</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+
+        
+<button class="theme-btn" onclick="toggleTheme()">🌗</button>
+    </nav>
+</header>
+   
+
+   
+<section class="customer-section">
+
+    <div class="title-box">
+        <h1>Customer Database</h1>
+        <p>
+            Manage customer information efficiently. Add new customers,
+            edit existing records, delete unnecessary data, and search
+            instantly through the database.
+        </p>
+    </div>
+
+    <div class="controls">
+
+        <input type="text" id="name" placeholder="Customer Name">
+
+        <input type="email" id="email" placeholder="Email Address">
+
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <button onclick="addCustomer()">Add Customer</button>
+
+    </div>
+
+    <div class="search-box">
+        <input
+        type="text"
+        id="search"
+        placeholder="Search customer..."
+        onkeyup="searchCustomer()">
+    </div>
+
+    <div class="table-container">
+
+        
+
+        <table id="customerTable">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Customer Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+
+</html>
